@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_car"
+        android:name="com.example.deveemsecondtechtask.ui.wallet.WalletFragment"
+        android:label="@string/cars"
+        tools:layout="@layout/fragment_car" />
+
+    <fragment
+        android:id="@+id/navigation_wallet"
+        android:name="com.example.deveemsecondtechtask.ui.car.CarFragment"
+        android:label="@string/wallet"
+        tools:layout="@layout/fragment_wallet" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.deveemsecondtechtask.ui.home.HomeFragment"
+        android:label="@string/main"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.deveemsecondtechtask.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.deveemsecondtechtask.ui.more.MoreFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_more" />
+</navigation>
